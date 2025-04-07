@@ -1,3 +1,12 @@
+target/
+!target/site/jacoco/  # Разрешить только папку с отчетами
+
+### IntelliJ IDEA ###
+.idea/
+
+### Mac OS ###
+.DS_Store
+
 # Compiled class file
 *.class
 
