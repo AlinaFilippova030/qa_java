@@ -1,4 +1,5 @@
 target/
+!target/site/jacoco/  # Разрешить только папку с отчетами
 
 ### IntelliJ IDEA ###
 .idea/

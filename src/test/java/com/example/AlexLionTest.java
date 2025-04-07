@@ -14,12 +14,12 @@ import static org.mockito.Mockito.when;
 public class AlexLionTest {
 
     @Mock
-    private Predator predator;
+    private Feline feline;
     private AlexLion alexLion;
 
  @Before
  public void setUo() throws Exception {
-     alexLion = new AlexLion("Самец", predator);
+     alexLion = new AlexLion("Самец", feline);
  }
 
 
@@ -43,7 +43,7 @@ public class AlexLionTest {
     @Test
     public void getFoodTest() throws Exception {
         List<String> expectedFood = List.of("Животные", "Птицы", "Рыба");
-        when(predator.getFood("Хищник")).thenReturn(expectedFood);
+        when(feline.getFood("Хищник")).thenReturn(expectedFood);
         assertEquals(expectedFood, alexLion.getFood());
     }
 
@@ -51,5 +51,4 @@ public class AlexLionTest {
     public void doesHaveManeTest() {
         Assert.assertTrue(alexLion.doesHaveMane());
     }
-
 }

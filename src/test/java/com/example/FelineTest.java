@@ -19,12 +19,6 @@ public class FelineTest {
     }
 
     @Test
-    public void HerbivoreEatGrassTest() throws Exception {
-        List<String> expected = List.of("Трава", "Различные растения");
-        Assert.assertEquals(expected, feline.notEatMeat());
-    }
-
-    @Test
     public void getFamilyTest() {
         Assert.assertEquals("Кошачьи", feline.getFamily());
     }

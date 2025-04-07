@@ -10,16 +10,10 @@ public class Feline extends Animal implements Predator {
     }
 
     @Override
-    public List<String> notEatMeat() throws Exception {
-        return getFood("Травоядное");
-    }
-
-    @Override
     public String getFamily() {
         return "Кошачьи";
     }
 
-    @Override
     public int getKittens() {
         return getKittens(1);
     }
